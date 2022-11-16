@@ -1,5 +1,5 @@
 {% set name = "automap" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9e668daa7faf4cf460b156ff987897af3af1456e909b90d32a4596e871c5247
+  sha256: f9b93308ca3b4fc69d7fa757fbfa01b4e952a298fc7a6cc8b6adfb1fa966bfcc
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
